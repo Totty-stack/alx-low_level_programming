@@ -1,2 +1,8 @@
 #include <main.h>
-int _putchar (char c);
+  
+int main()
+{
+	     char ch = "_putchar";
+		putchar (ch);
+	      return (0)
+}
