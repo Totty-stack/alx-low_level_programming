@@ -10,7 +10,7 @@
  * return NULL if size if 0 
  * return *p if fails
  */
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {
 	char c;
 	char *po;
