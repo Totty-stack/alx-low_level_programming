@@ -5,20 +5,24 @@
 /**
  * create_array - function that creates an array of chars
  * @c - character that initializes
- * @*p - pointer to array
+ * @*size - size of array
  *
- * return NULL if size if 0 
- * return *p if fails
+ * return: NULL if size == 0 or function fails
+ *	return *p if fails
  */
 char *create_array(unsigned int size, char c)
 {
-	char c;
+	unassigned int index;
 	char *po;
 
-	po = (char*) malloc([]*sizeof(char));
-	{
-		if (sizeof(char) == 0)
+	if (size == 0)
+		return(NULL);
+
+	po = malloc(size * sizeof(char));
+
+		if (array == NULL)
 			return(NULL);
-	}
-	free(po);
+	for (index = 0; index < size; index++)
+		array [index] = c;
+	return (array);
 }
