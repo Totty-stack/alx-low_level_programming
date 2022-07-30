@@ -2,7 +2,7 @@
 #include "stdlib.h"
 
 /**
- * _strdup - function that returns a pointer to new allocated space
+ * _strdup - returns a pointer to new allocated space
  * @str: string to be duplicated
  * @_strdup: function to dubplicatec string
  *
@@ -20,7 +20,7 @@ char *_strdup(char *str)
 	for (index = 0; str[index]; index++)
 		len++;
 
-	duplicate = malloc (sizeof (char) * (len + 1));
+	duplicate = malloc(sizeof(char) * (len + 1));
 	if (duplicate == NULL)
 		return (NULL);
 	for (index = 0; str[index]; index++)
