@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -12,17 +11,19 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	unassigned int index;
-	char *po;
+	unsigned int index;
+	char *array;
 
 	if (size == 0)
 		return(NULL);
 
-	po = malloc(size * sizeof(char));
+	array = malloc(size * sizeof(char));
 
 		if (array == NULL)
 			return(NULL);
+
 	for (index = 0; index < size; index++)
-		array [index] = c;
+		array[index] = c;
+
 	return (array);
 }
