@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main()
+int main (void)
 {
-	printf("filename : %s\n", __FILE__);
+	printf("name of the file is : %s\n", __FILE__);
 	return 0;
 }
