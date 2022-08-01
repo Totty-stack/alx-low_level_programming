@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - prints current file name
+ * main - prints current file name followe by new line
  *
- * return: 0
+ * return: always zero
  */
-
 int main (void)
 {
 	printf("%s\n", __FILE__);
