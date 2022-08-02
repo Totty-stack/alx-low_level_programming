@@ -1,6 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * struct dog - defining a new data type
+ * @name: data type of char
+ * @owner: data type of char
+ * @age: data type int
+ *
+ * return: NULL if fails and my_dog if passes.
+ */
+
 struct dog
 {
 	char *name;
