@@ -19,15 +19,14 @@ struct dog
 	char *owner;
 	float age;
 };
-struct dog *my_dog(char *name, char *owner, float age)
+struct dog *dogg(char *name, char *owner, float age)
 {
-	struct dog *my_dog;
+	struct dog *dogg;
 
-	my_dog = malloc(sizeof(struct dog));
-	my_dog->name = name;
-	my_dog->owner = owner;
-	my_dog->age = age;
-	return (my_dog);
+	dogg = malloc(sizeof(struct dog));
+	dogg->name = name;
+	dogg->owner = owner;
+	dogg->age = age;
+	return (dogg);
 }
-void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif /* DOG_H */
