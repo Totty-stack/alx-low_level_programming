@@ -29,5 +29,5 @@ struct dog *my_dog(char *name, char *owner, float age)
 	my_dog->age = age;
 	return (my_dog);
 }
-
+void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif /* DOG_H */
