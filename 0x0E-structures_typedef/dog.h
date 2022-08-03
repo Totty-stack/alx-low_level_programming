@@ -2,8 +2,7 @@
 #define DOG_H
 
 #include <stdlib.h>
-#include <stdio.h>
-
+#include <stdio.h> 
 /**
  * struct dog - defines new data type
  * @name: char data type
@@ -19,14 +18,17 @@ struct dog
 	char *owner;
 	float age;
 };
-struct dog *dogg(char *name, char *owner, float age)
-{
-	struct dog *dogg;
 
-	dogg = malloc(sizeof(struct dog));
-	dogg->name = name;
-	dogg->owner = owner;
-	dogg->age = age;
-	return (dogg);
-}
+/**
+ * dog_t - Typedef for struct dog
+ */
+
+typedef struct dog dog_t;
+
+int _putchar(char);
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+
 #endif /* DOG_H */
